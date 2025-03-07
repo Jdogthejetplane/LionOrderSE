@@ -41,3 +41,9 @@ requirements.txt:
 
 db/init.sql:
     Initializes database. It's imporant to note that docker-compose.yml copies this file into the mariadb container where it is executed. 
+
+
+Webpage:
+    Created index.html file 
+    Created style.css file 
+    
