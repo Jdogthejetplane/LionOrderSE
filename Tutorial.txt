@@ -1,0 +1,43 @@
+Important commands:
+      Docker:
+          docker ps
+          docker images
+          docker logs <container_name>
+          docker exec -it <container_name> sh
+
+
+
+      DockerCompose:
+          dokcer-compose up 
+          docker-compose up --build
+          docker-compose down
+          docker-compose restart
+          docker-compose ps
+          docker-compose logs <service_name>
+          docker-compose exec <service_name> sh
+
+
+
+
+
+How do files and filepaths work? 
+
+Dockerfile:
+    Defines how a container is going to be built by creating a docker IMAGE. Can specify commands to run, server distributions to use, or installation requirements. 
+    Images need to be rebuilt when modifying code. 
+
+docker-compose.yml:
+    Yaml file that defines and manages the container. In the customers example, it creates a container based of the customer image we created, as well as using a public image for the mariadb database. 
+    Also can attach volumes to the containers from the filesystem and exposes ports. (8000 for FastAPI, 3306 for MariaDB). 
+    Enables communication between python and mariadb. 
+
+Main.py:
+    Uses FastAPI to enable JSON communication in and out.
+    Uses pymysql to enable easy sql statements into the mariadb database. 
+    Uses uvicorn server to run FastAPI on. 
+
+requirements.txt:
+    Simply gives the python requirements that the dockerfile uses to install into the container. 
+
+db/init.sql:
+    Initializes database. It's imporant to note that docker-compose.yml copies this file into the mariadb container where it is executed. 
