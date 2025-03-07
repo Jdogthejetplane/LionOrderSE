@@ -49,6 +49,5 @@ if __name__ == "__main__":
     import socketserver
     import http.server
 
-    # Run FastAPI using Python's built-in HTTP server
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
