@@ -4,7 +4,7 @@ Important commands:
           docker images
           docker logs <container_name>
           docker exec -it <container_name> sh
-
+          docker -v // docker version
 
 
       DockerCompose:
@@ -15,7 +15,7 @@ Important commands:
           docker-compose ps
           docker-compose logs <service_name>
           docker-compose exec <service_name> sh
-
+          docker-compose version // docker compose version
 
 
 
