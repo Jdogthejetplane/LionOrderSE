@@ -44,6 +44,10 @@ db/init.sql:
 
 
 Webpage:
-    Created index.html file 
-    Created style.css file 
+    webpage/login.html:
+        This is used for creating the login page where customer are able to first log into the website. 
+        This was used making HTML and Bootstrap for easier and responsive design.
+        
+    webpage/login.css:
+        This is creating the design and resizing the the differnt strucure of the HTML file.
     
