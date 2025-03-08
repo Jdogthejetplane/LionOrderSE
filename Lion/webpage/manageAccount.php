@@ -12,7 +12,7 @@ echo ("manage Account manageAccount.php called")
     <meta http-equiv="X-UA-Compatible">
     <meta name-"viewport" content="width-device-width, initial-scale=1.0">
     <!-- change the tab text-->
-    <title>The Local Farm Company - Ordering</title>
+    <title>The Local Farm Company - Manage Account</title>
 
 <!--External style sheet CSS START-->
 <link rel="stylesheet" href="style.css">
@@ -24,53 +24,48 @@ echo ("manage Account manageAccount.php called")
 <body class="manageAccount">
 <!-- anything we want to display goes in the body -->
 
-<!--
-   <header>
-     <h1>manage Account</h1>
-   </header>
--->
 <main>
-
 <label class="customerName">CUSTOMER NAME is MANAGING ACCOUNT</label></br>
 
-<a href="Orders.html" class="button-class">Return To Orders</a>
+<form action = "Orders.html"  class="returnButton">
+<type="submit" value="Return To Orders" />
+</form>
 
-<div class="dropdown">
-  <button class="dropbtn">MENU</button>
-  <div class="dropdown-content">
-    <a href="Orders.html">Return to Order</option></a>
-  </div>
-</div>
+<button onclick="location.href='Orders.html'" type="button">
+         Back to Orders</button>
 
 <form id="form1" action="join.php" method="get">
 
 <fieldset>
 <legend>Account Information</legend>
-<div class="account-div-group">
+<div class="stack">
+      
         <label for="email">Email address: </label>
         <input type="email" id = "email1" name="email1" placeholder="Enter email">
- 	<input button type="button" id="changeEmail_btn" name="changeEmail_btn" value="Change Email">
+ 	      <input button class="button1" type="button" id="changeEmail_btn" name="changeEmail_btn" value="Change Email">
       </br>
 
       <label for ="password1">Password                  :</label>
       <input type="password" id="password1" name="password1" placeholder="*****">
-      <input button type="button" id="changePassword_btn" name="changePassword_btn" value="Change Password">
+      <input button class="button1" type="button" id="changePassword_btn" name="changePassword_btn" value="Change Password">
       </br>
 
       <label for="name">Name: </label>
       <input type="name" class="form-control"
-         id = "yourName" name=""yourName" placeholder="Enter name">
-      <input button type="button" id="changeName_btn" name="changeName_btn" value="Change Name">
+         id = "yourName" name="yourName" placeholder="Enter name">
+      <input button class="button1" type="button" id="changeName_btn" name="changeName_btn" value="Change Name">
       </br>
-       
+     
       <label for="address" class="form-label" mt-4>Address: </label>
       <input type="address" class="form-control"
           id = "yourAddress" name="yourAddress" placeholder="Enter Address">
-      <input button type="button" id="changeAddress_btn" name="changeAddress_btn" value="Change Address">
-</div>
+      <input button class="button1" type="button" id="changeAddress_btn" name="changeAddress_btn" value="Change Address">
+      </br>
+
+</div> <!-- stack div -->
 
 </br>
-<label for="frequency" class="form-label mt-4">
+<label for="frequency" class="frequency-label mt-4">
   Email News Letter Frequency</label>
   <select class="form-select" id = "emailFrequency">
     <option value="0">Never</option>
@@ -84,19 +79,19 @@ echo ("manage Account manageAccount.php called")
 <!-- radio buttons !-->
 <input class="form-check-input" type="radio" name="membership"
   id="noMembership" value="none">
-  <label class="form-check-input" for="basic">No Membership </label>
+  <label class="labelleft" or="basic">No Membership </label>
    </br>
 <input class="form-check-input" type="radio" name="membership"
   id="basicMembership" value="basic">
-  <label class="form-check-input" for="basic">Basic Membership </label>
+  <label class="labelleft" for="basic">Basic Membership </label>
    </br>
   <input class="form-check-input" type="radio" name="membership"
   id="silverMembership" value="silver">
-  <label class=""form-check-input for="silver">Silver Membership </label>
+  <label class="labelleft"  for="silver">Silver Membership </label>
 </br>
   <input class="form-check-input" type="radio" name="membership"
   id="goldMembership" value="gold" checked>
-  <label class=""form-check-input for="gold">Gold Membership </label>
+  <label class="labelleft" for="gold">Gold Membership </label>
    </br>
    </br>
 
