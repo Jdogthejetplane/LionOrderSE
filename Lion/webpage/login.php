@@ -1,3 +1,11 @@
+
+
+
+
+
+
+<!-- HTML CODE -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +22,7 @@
 
 <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center vh-100">
-        <h1 class="title">The Local Farming Company</h1> <!-- Title that will be styled -->
+        <h1 class="title">The Local Farming Company</h1> <!-- Title -->
         
         <form action="action_page.php" method="post" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;">
             <div class="text-center mb-3">
@@ -28,7 +36,7 @@
             </div>
             
 
-            <div class="username">
+            <div class="email">
                 <label for="email" class="form-label"><b>Email</b></label>
                 <input type="email" class="form-control" placeholder="Enter your Email" name="email" required>
             </div>
@@ -41,7 +49,7 @@
             
 
             <div class= login>
-            <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+            <button type="submit" class="btn btn-primary w-100 mb-2" style="background-color: green; color: white;">Login</button>
 
             </div>
       
@@ -54,7 +62,7 @@
             
             <div class="d-flex justify-content-between">
                 <button type="button" class="btn btn-secondary">Cancel</button>
-                <a href="#" class="text-decoration-none">Create account</a>
+                <a href="createaccount.php" class="text-decoration-none" >Create account</a>
                 <a href="#" class="text-decoration-none">Forgot password?</a>
             </div>
         </form>

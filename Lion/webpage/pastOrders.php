@@ -1,131 +1,104 @@
-<?php
-echo ("Past Orders pastOrders.php called")
-# pull data
-# display
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<!-- metadata (data about the page) in-->
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name-"viewport" content="width-device-width, initial-scale=1.0">
-    <!-- change the tab text-->
-    <title>The Local Farm Company - Ordering</title>
-
-<!--External style sheet CSS START-->
-<link rel="stylesheet" href="style.css">
-<!-- <img class="logo" src="logo.png" alt="The Local Farm Company"  width="50"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Local Farm Company - Past Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<!-- ********************************* -->
+<body class="bg-light">
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="display-4">Past Orders</h1>
+        </header>
 
-<body class="pastorders">
-<!-- anything we want to display goes in the body -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <label class="h5">CUSTOMER NAME is currently hopping</label>
+            <a href="order.php" class="btn btn-primary">Return To Orders</a>
+        </div>
 
-<!--
-   <header>
-     <h1>Ordering</h1>
-   </header>
--->
-<main>
+        <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MENU
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="order.php">Return to Order</a></li>
+            </ul>
+        </div>
 
-<label class="customerName">CUSTOMER NAME is shopping</label></br>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
 
-<a href="Orders.html" class="button-class">Return To Orders</a>
+                    <th>Ordered Date</th>
+                    <th>Order Number</th>
+                    <th>Total Qty</th>
+                    <th>Total $</th>
+                    <th>Order Status</th>
 
-<div class="dropdown">
-  <button class="dropbtn">MENU</button>
-  <div class="dropdown-content">
-    <a href="Orders.html">Return to Order</option></a>
-  </div>
-</div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
 
+                    <td>January 12, 2023</td>
+                    <td>121222</td>
+                    <td>123</td>
+                    <td>$56.75</td>
+                    <td>Finished</td>
 
-<!-- Creating a table -->
-<!-- Header, body, footer - header footer bolded by default -->
+                </tr>
+                <tr>
 
-<table>
-<!--New row - headers -->
-<thead>
-<caption class="tablecaption">Past Orders</caption>
- 	<tr>
-	<th class="tabdetailText">Ordered Date</th>
-	<th class="tabdetailNumeric">Order #</th>
-	<th class="tabdetailNumeric">Total Qty</th>
-	<th class="tabdetailNumeric">Total $</th>
-	<th class="tabdetailNumeric">Status</th>
+                    <td>October 1, 2024</td>
+                    <td>233333</td>
+                    <td>321</td>
+                    <td>$667.75</td>
+                    <td>Cancelled</td>
 
-	</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tabdetailText">January 12, 2023</td>
-<td class="tabdetailText">121222</td>
-<td class="tabdetailNumeric">123</td>
-<td class="tabdetailNumeric">$56.75</td>
-<td class="tabdetailNumeric">Finished</td>
-</tr>
+                </tr>
+                <tr>
 
-<tr>
-<td class="tabdetailText">October 1, 2024</td>
-<td class="tabdetailText">233333</td>
-<td class="tabdetailNumeric">321</td>
-<td class="tabdetailNumeric">$667.75</td>
-<td class="tabdetailNumeric">Cancelled</td>
-</tr>
-<tr>
-<td class="tabdetailText">October 13, 2024</td>
-<td class="tabdetailText">2335656</td>
-<td class="tabdetailNumeric">100</td>
-<td class="tabdetailNumeric">$560.75</td>
-<td class="tabdetailNumeric">Finished</td>
-</tr>
-<tr">
-<td class="tabdetailText">November 23, 2024</td>
-<td class="tabdetailText">444444</td>
-<td class="tabdetailNumeric">99</td>
-<td class="tabdetailNumeric">$77.00</td>
-<td class="tabdetailNumeric">Finished</td>
-</tr>
+                <td>October 13, 2024</td>
+                <td>2335656</td>
+                <td>100</td>
+            	<td>$560.75</td>
+                <td>Finished</td>
 
-<tr>
-<td class="tabdetailText">December 3, 2024</td>
-<td class="tabdetailText">55555</td>
-<td class="tabdetailNumeric">123</td>
-<td class="tabdetailNumeric">$56.75</td>
-<td class="tabdetailNumeric">Finished</td>
-</tr
+                </tr>
+                <tr>
+                <td>November 23, 2024</td>
+                <td>444444</td>
+                <td>99</td>
+                <td>$77.00</td>
+                <td>Finished</td>
+                </tr>
+                <tr>
+					
+                <td>December 3, 2024</td>
+                <td>55555</td>
+                <td>123</td>
+                <td>$56.75</td>
+                 <td>Finished</td>
+                </tr>
+                <tr>
 
-<tr>
-<td class="tabdetailText">February 27, 2025</td>
-<td class="tabdetailText">666876</td>
-<td class="tabdetailNumeric">134</td>
-<td class="tabdetailNumeric">$156.75</td>
-<td class="tabdetailNumeric">In transit</td>
-</tr
-</tbody>
+                <td>February 27, 2025</td>
+                <td>666876</td>
+                <td>134</td>
+                <td>$156.75</td>
+                <td>In transit</td>
 
- <tfoot>
-<tr> <!--new row-->
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-</tr>
-</tfoot>
-</table>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-</main>
-
-
-<footer>
-
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
