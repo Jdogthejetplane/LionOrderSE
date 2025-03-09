@@ -41,10 +41,10 @@
 <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center vh-100">
 
-        <h1 class="title"><br>The Local Farming Company</h1> <!-- Title -->
+        <h1 class="title" style= "margin-top: -60px"><br>The Local Farming Company</h1> <!-- Title -->
         
-        <form action="forgotpassword.php" method="get" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;">
-            <div class="text-center mb-3">
+        <form action="forgotpassword.php"  method="get" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;  margin-top: 50px;" >
+            <div class="text-center mb-4">
                 <img src="farmlogo.png" alt="Logo" class="rounded-circle" width="150">
             </div>
 
