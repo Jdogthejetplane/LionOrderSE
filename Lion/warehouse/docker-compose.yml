@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  warehouse:
+    build: .
+    ports:
+      - "8001:8000"
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: warehouseDB
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3307:3306"
+
