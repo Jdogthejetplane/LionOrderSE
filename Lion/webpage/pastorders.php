@@ -11,24 +11,35 @@
 </head>
 
 <body class="bg-light">
+
+
+ <!--  Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+<img src="farmlogo.png" alt="Logo" class="rounded-circle" width="50">&nbsp;&nbsp;
+            <a class="navbar-brand" style= " font-size: 23px;"  href="#">The Local Farm Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="menu me-3"><a class="nav-link" href="order.php" style="color: white; font-size: 18px;">Order Screen</a></li>
+                    <li class="menu me-3"><a class="nav-link" href="manageaccount.php" style="color: white; font-size: 18px;">Manage Account</a></li>
+                    <li class="menu me-3 "><a class="nav-link" href="login.php" style="color: white; font-size: 18px;">Log Out</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+
     <div class="container mt-5">
         <header class="text-center mb-4">
-            <h2 class="display-4">Past Orders</h2>
+                   <h1 class="text-center mb-4">Your Past Orders</h1>
         </header>
-
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <label class="h5">CUSTOMER NAME is currently hopping</label>
-            <a href="order.php" class="btn btn-primary">Return To Orders</a>
-        </div>
-
-        <div class="dropdown mb-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                MENU
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="order.php">Return to Order</a></li>
-            </ul>
-        </div>
 
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
