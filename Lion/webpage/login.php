@@ -26,7 +26,7 @@
         
         <form action="action_page.php" method="post" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;">
             <div class="text-center mb-3">
-                <img src="farmlogo.png" alt="Avatar" class="rounded-circle" width="150">
+                <img src="farmlogo.png" alt="Logo" class="rounded-circle" width="150">
             </div>
 
             <div
@@ -37,13 +37,13 @@
             
 
             <div class="email">
-                <label for="email" class="form-label"><b>Email</b></label>
+                <label for="email" class="emaillabel"><b>Email</b></label>
                 <input type="email" class="form-control" placeholder="Enter your Email" name="email" required>
             </div>
       
 
             <div class="password">
-                <label for="pass" class="form-label"><b>Password</b></label>
+                <label for="pass" class="passlabel"><b>Password</b></label>
                 <input type="password" class="form-control" placeholder="Enter your Password" name="pass" required>
             </div>
             

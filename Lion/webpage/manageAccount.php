@@ -1,5 +1,5 @@
 <?php
-echo ("manage Account manageAccount.php called")
+echo ("manage Account manageaccount.php called")
 # pull data
 # display
 ?>
@@ -12,10 +12,9 @@ echo ("manage Account manageAccount.php called")
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- change the tab text-->
-    <title>The Local Farm Company - Ordering</title>
+    <title>The Local Farm Company - Manage Account</title>
 
-    <!--External style sheet CSS START-->
-    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -70,11 +69,12 @@ echo ("manage Account manageAccount.php called")
             <div class="mb-3">
                 <label for="emailFrequency" class="form-label">Email News Letter Frequency</label>
                 <select class="form-select" id="emailFrequency">
- <option value="0">Never</option>
-<option value="1">Weekly</option>
-<option value="2">Bi-Weekly</option>
-<option value="3">Monthly</option>
- <option value="4">Quarterly</option>
+                    
+            <option value="0">Never</option>
+            <option value="1">Weekly</option>
+            <option value="2">Bi-Weekly</option>
+            <option value="3">Monthly</option>
+            <option value="4">Quarterly</option>
                 </select>
             </div>
             

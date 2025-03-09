@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="menu me-3"><a class="nav-link" href="pastorders.php" style="color: white; font-size: 18px;">Past Orders</a></li>
-                    <li class="menu me-3"><a class="nav-link" href="manageAccount.php" style="color: white; font-size: 18px;">Manage Account</a></li>
+                    <li class="menu me-3"><a class="nav-link" href="manageaccount.php" style="color: white; font-size: 18px;">Manage Account</a></li>
                     <li class="menu me-3 "><a class="nav-link" href="login.php" style="color: white; font-size: 18px;">Log Out</a></li>
                     
                 </ul>
