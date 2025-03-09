@@ -19,6 +19,7 @@
     <!--  Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
+            <img src="farmlogo.png" alt="Logo" class="rounded-circle" width="50">&nbsp;&nbsp;
             <a class="navbar-brand" style= " font-size: 23px;"  href="#">The Local Farm Company</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
