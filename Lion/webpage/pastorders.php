@@ -13,7 +13,7 @@
 <body class="bg-light">
     <div class="container mt-5">
         <header class="text-center mb-4">
-            <h1 class="display-4">Past Orders</h1>
+            <h2 class="display-4">Past Orders</h2>
         </header>
 
         <div class="d-flex justify-content-between align-items-center mb-3">

@@ -1,5 +1,27 @@
+<?php
 
+  // Simple user data for testing
+  $users = [
+      "user1@farm.com" => "password",
+      "admin@localfarm.com" => "passadmin"
+  ];
+  
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $email = ($_POST['email'] ?? '');
+      $password = ($_POST['pass'] ?? '');
+  
 
+      if (isset($users[$email]) && $users[$email] === $password) {
+          header("Location: order.php");
+           exit();
+
+      } else {
+          echo '<p style="color: red;">Invalid email or password. Please try again.</p>';
+      }
+  }
+
+  ?>
+  
 
 
 
@@ -24,7 +46,7 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <h1 class="title">The Local Farming Company</h1> <!-- Title -->
         
-        <form action="action_page.php" method="post" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;">
+        <form action="login.php" method="post" class="p-4 border rounded bgwhite shadow-sm" style="width: 100%; max-width: 420px;">
             <div class="text-center mb-3">
                 <img src="farmlogo.png" alt="Logo" class="rounded-circle" width="150">
             </div>
