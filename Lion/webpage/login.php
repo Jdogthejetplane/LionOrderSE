@@ -85,7 +85,7 @@
             <div class="d-flex justify-content-between">
                 <button type="button" class="btn btn-secondary">Cancel</button>
                 <a href="createaccount.php" class="text-decoration-none" >Create account</a>
-                <a href="#" class="text-decoration-none">Forgot password?</a>
+                <a href="forgotpassword.php" class="text-decoration-none">Forgot password?</a>
             </div>
         </form>
     </div>
