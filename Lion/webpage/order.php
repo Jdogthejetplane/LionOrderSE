@@ -41,7 +41,7 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Build Your Custom Salad</h1>
 
-        <form action="submit_order.php" method="POST">
+        <form action="pastorders.php" method="POST">
 
 
             <div class="mb-4">
